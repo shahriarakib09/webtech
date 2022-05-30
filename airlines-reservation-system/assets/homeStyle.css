@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,300&display=swap');
+body {      
+     /* background-image: url("../media/background.svg"); 
+      background-attachment: fixed;
+      background-size: cover;*/
+      -webkit-font-smoothing: antialiased;
+      text-align: center;
+      padding: 0px;
+      margin: 0px; 
+      height: 100%;
+      font-family:'Poppins', sans-serif;
+      line-height: 1.5;
+      background-color: rgb(255, 255, 255);
+    }
+    html{
+      scroll-behavior: smooth;
+      height: 100%;
+  }
+  ::-webkit-scrollbar {
+      width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+  }
+    nav{
+          background-color: #333;
+          align-items: center;
+          height:50px;
+          display: flex;
+          justify-content: space-between;
+        }
+        nav ul{
+          list-style: none;
+          display: flex;
+          top: 80px;
+          transition: all .3s ease; 
+        }
+        nav ul li{
+          margin:0 5px;
+        }
+        nav ul li a{
+          font-size: 18px;
+          text-decoration: none;
+          color: #f2f2f2;
+          padding: 12px 38px;
+          cursor: pointer;
+          transition: all .2s ease;
+          border-radius: 8px;
+        }
+        nav .logo i{
+          font-size: 32px;
+          font-weight: bold;
+          padding-left: 60px;
+          color: bisque;
+        }
+        nav ul li a:hover{
+          background-color: #aaaaaa;
+          transform: scale(1.2);
+          color: black;
+        }
+        nav .menu-btn i{
+          color:white;
+          cursor: pointer;
+          font-size: 32px;
+          padding-right: 40px;
+          display: none;
+        }
+        #click{
+          display: none;
+        }
+        .homepage_img{
+          background-image: url("../media/homepagePlane.jpg");
+          min-height:30%;
+          background-size: cover;
+          background-repeat: no-repeat;  
+        }
+        .flight_search{
+          display: flex;
+          font-size: 32px;
+          align-items: center;
+          display:block;
+          margin:0px 180px;
+          margin-top: 40px;  
+        }
+        .book_flight{
+          
+          display: flex;
+          font-size: 32px;
+          align-items: center;
+          display:block;
+          margin:0px 180px;
+          margin-top: 40px;
+        }
+        .departure_result,.arrival_result{
+          color: black;
+          font-size: 22px;
+
+        }
+        
+        /*              */
+        .halfStyle {
+          font-weight:bolder;
+          position: relative;
+          display: inline-block;
+          font-size: 60px; /* or any font size will work */
+          color: transparent; /* hide the base character */
+          overflow: hidden;
+          white-space: pre; /* to preserve the spaces from collapsing */
+        }
+        
+        .halfStyle:before { /* creates the top part */
+          display: block;
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          height: 50%;
+          content: attr(data-content); /* dynamic content for the pseudo element */
+          overflow: hidden;
+          pointer-events: none; /* so the base char is selectable by mouse */
+          color: rgb(0, 0, 0); /* for demo purposes */
+          
+        }
+        
+        .halfStyle:after { /* creates the bottom part */
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          height: 100%;
+          content: attr(data-content); /* dynamic content for the pseudo element */
+          overflow: hidden;
+          pointer-events: none; /* so the base char is selectable by mouse */
+          color: rgb(255, 255, 255); /* for demo purposes */
+          
+        }
+
+        /*              */
+        fieldset{
+          border-radius: 16px;
+          background-color: rgb(133, 133, 133);
+          
+        }
+
+        .flight_search form{
+          margin-left: 90px;
+          align-items: center;
+          margin-bottom: 250px;
+        }
+        .flight_search .box{
+          flex-direction: row;
+          float: left;
+          font-size: 28px;
+          margin-right: 30px;
+
+        }
+       
+        .flight_search .box input,select{
+          width: 300px;
+          height: 28px;
+          font-size: 18px;
+          border-radius: 4px;
+          transition: all 0.3s ease;
+
+        }
+        .flight_search .box i{
+          
+          color: black;
+        }.flight_search .box input[type="submit"]{
+          height: 32px;
+        }
+        .flight_search .box input[type="submit"]:hover{
+          background-color: rgb(133, 173, 248);
+          color:black ;
+          transform: scale(1.1);
+
+        }
+.hidden{
+  display: none;
+}
+.flight_results{
+
+  display: flex;
+  font-size: 32px;
+  align-items: center;
+  display:block;
+  margin:0px 180px;
+  margin-top: 40px;
+  
+  
+}
+.flight_results legend{
+  font-weight: bolder;
+}
+.flight_results .box{
+  flex-direction: column;
+}
+
+
+
+     @media(max-width:940px){
+      nav .logo i{
+        font-size: 22px;
+        font-weight: bold;
+        padding-left: 20px;
+        color: bisque;
+      }
+      fieldset{
+        border-radius: 12px;
+      }
+      .flight_search{
+        margin:45px;
+        
+      }
+      .flight_search form{
+        margin-left: 20px;
+      }
+      .flight_search .box{
+        flex-direction: column;
+        
+        font-size: 18px;
+      
+
+      }
+          nav .menu-btn i{
+            display: block;
+          }
+          #click:checked ~ .menu-btn i:before{
+            content:"\f00d";
+          }
+          nav ul{
+            position:fixed;
+            width:100%;
+            height: 100%;
+            text-align: center;
+            display: block;
+            background: #111;
+            right: -120%;
+            top: 35px;
+            transition: all 0.5s ease;
+          }
+          #click:checked ~ ul{
+            right:0%
+          }
+          nav ul li{
+            margin:40px 0; 
+          }
+          nav ul li a{
+            width: 100%;  
+          }
+        }
+       input{
+          font-size: 24px;
+        }

@@ -1,0 +1,147 @@
+body {      
+  background-image: url("../media/background.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  padding: 0px;
+  margin: 0px; 
+}
+table{       
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+    color: azure;
+    position: relative;
+    font-size: 32px;
+    min-block-size: 120px;
+}
+table td input {
+ display: block;
+ width: 100%;
+ height: 60px;
+ font-size: 32px;
+ font-weight: bold;
+}
+table td select{
+  display: block;
+  width: 100%;
+  height: 60px;
+  font-size: 32px;
+  font-weight: bold;
+}
+th, td {
+text-align: left;
+padding: 16px;
+}  
+tr:nth-child(even) {
+background-color: #272424;
+}
+form{
+margin-left: auto;
+margin-right: auto;
+display: inline-block;
+font-size: 42px;
+}
+form label{
+color: wheat;
+}
+a:link {
+  text-decoration: none;
+}
+h1{
+  color:white;
+}
+.button {
+  background-color: #999999; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  }
+  .button:hover{
+      background-color: #636262;
+    }
+nav{
+      background-color: #333;
+      align-items: center;
+      height:80px;
+      display: flex;
+      justify-content: space-between;
+    }
+    nav ul{
+      list-style: none;
+      display: flex;
+      top: 80px;
+      transition: all .3s ease; 
+    }
+    nav ul li{
+      margin:0 5px;
+    }
+    nav ul li a{
+      font-size: 26px;
+      text-decoration: none;
+      color: #f2f2f2;
+      padding: 12px 38px;
+      cursor: pointer;
+      transition: all .2s;
+      border-radius: 8px;
+    }
+    nav .logo{
+      font-size: 38px;
+      font-weight: bold;
+      padding-left: 40px;
+      background-image:("../media/logo.png");
+    }
+    nav a.active{
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+    }
+    nav ul li a:hover{
+      background-color: #000000;
+      transform: scale(1.2);
+    }
+    nav .menu-btn i{
+      color:white;
+      cursor: pointer;
+      font-size: 32px;
+      padding-right: 40px;
+      display: none;
+    }
+    #click{
+      display: none;
+    }
+ @media(max-width:940px){
+      nav .menu-btn i{
+        display: block;
+      }
+      #click:checked ~ .menu-btn i:before{
+        content:"\f00d";
+      }
+      nav ul{
+        position:fixed;
+        width:100%;
+        height: 100%;
+        text-align: center;
+        display: block;
+        background: #111;
+        right: -120%;
+        top: 80px;
+        transition: all 0.5s ease;
+      }
+      #click:checked ~ ul{
+        right:0%
+      }
+      nav ul li{
+        margin:40px 0; 
+      }
+      nav ul li a{
+        width: 100%;  
+      }
+    }
+input{
+  font-size: 24px;
+}

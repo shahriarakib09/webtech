@@ -1,0 +1,26 @@
+.Title{
+    
+    
+    text-align: center;
+
+}
+.logo{
+    margin: auto;
+    padding: 10px  0 10px 20px  ;
+    font-size: 30px;
+    }
+.p{
+    color:rgb(54, 53, 53);
+    margin:auto;
+    font-size: 52px;
+}
+h3{
+    font-weight: bolder;
+    color:#3b3a3a;
+}
+h1{
+    font-size:50px;
+    color:rgb(51, 48, 48);
+}
+
+

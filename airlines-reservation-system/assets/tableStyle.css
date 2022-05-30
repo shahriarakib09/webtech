@@ -1,0 +1,49 @@
+table{       
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+          color: azure;
+          position: relative;
+          font-size: 22px;
+          min-block-size: 100px;
+      }
+      table td input {
+       display: block;
+       width: 100%;
+       height: 60px;
+       font-size: 22px;
+       font-weight: bold;
+      }
+      table td select{
+        display: block;
+        width: 100%;
+        height: 60px;
+        font-size: 22px;
+        font-weight: bold;
+      }
+      th, td {
+      text-align: left;
+      padding: 16px;
+      }  
+      tr:nth-child(even) {
+      background-color: #272424;
+      }
+      a:link {
+        text-decoration: none;
+      }
+      h1{
+        color:white;
+      }
+      .button {
+        background-color: #999999; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+        }
+        .button:hover{
+            background-color: #636262;
+          }
